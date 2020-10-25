@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name 18650_battery)(type Legacy)(uri ${KIPRJMOD}/Drift_trike_lib/18650_battery.lib)(options "")(descr ""))
+  (lib (name trike_lib)(type Legacy)(uri ${KIPRJMOD}/Drift_trike_lib/trike_lib.lib)(options "")(descr ""))
+)
