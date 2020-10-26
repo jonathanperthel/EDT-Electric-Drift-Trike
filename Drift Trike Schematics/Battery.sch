@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
+Title "Battery and BMS"
 Date ""
 Rev ""
-Comp ""
-Comment1 ""
+Comp "EDT"
+Comment1 "Jonathan Perthel"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -2233,14 +2233,155 @@ Wire Wire Line
 	3900 5900 4200 5900
 Connection ~ 3900 5900
 Connection ~ 4200 5900
-Connection ~ 1950 2650
 Wire Wire Line
 	1950 2650 1950 2850
-Connection ~ 4900 2650
 Wire Wire Line
 	4900 2650 4900 2850
 Wire Wire Line
 	1950 2600 1950 2850
 Wire Wire Line
 	4900 2600 4900 2850
+$Comp
+L trike_lib:BMS U?
+U 1 1 5F9B4422
+P 8750 2000
+F 0 "U?" H 8850 1950 50  0001 C CNN
+F 1 "BMS" H 9728 875 50  0000 L CNN
+F 2 "" H 8850 1950 50  0001 C CNN
+F 3 "" H 8850 1950 50  0001 C CNN
+	1    8750 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1100 1250 800 
+Wire Wire Line
+	1250 800  8650 800 
+Wire Wire Line
+	8650 800  8650 1900
+Connection ~ 1250 1100
+Wire Wire Line
+	9050 1900 8650 1900
+Connection ~ 8650 1900
+Wire Wire Line
+	8650 1900 8650 2150
+Wire Wire Line
+	6850 1100 8450 1100
+Wire Wire Line
+	8450 1100 8450 2250
+Wire Wire Line
+	8450 2250 8650 2250
+Connection ~ 6850 1100
+Wire Wire Line
+	6850 1350 8400 1350
+Wire Wire Line
+	8400 1350 8400 2350
+Wire Wire Line
+	8400 2350 8650 2350
+Wire Wire Line
+	6850 1600 8350 1600
+Wire Wire Line
+	8350 1600 8350 2450
+Wire Wire Line
+	8350 2450 8650 2450
+Wire Wire Line
+	6850 1850 8300 1850
+Wire Wire Line
+	8300 1850 8300 2550
+Wire Wire Line
+	8300 2550 8650 2550
+Wire Wire Line
+	6850 2100 8250 2100
+Wire Wire Line
+	8250 2100 8250 2650
+Wire Wire Line
+	8250 2650 8650 2650
+Wire Wire Line
+	6850 2350 8200 2350
+Wire Wire Line
+	8200 2350 8200 2750
+Wire Wire Line
+	8200 2750 8650 2750
+Wire Wire Line
+	6850 2600 8150 2600
+Wire Wire Line
+	8150 2600 8150 2850
+Wire Wire Line
+	8150 2850 8650 2850
+Wire Wire Line
+	6850 2850 8100 2850
+Wire Wire Line
+	8100 2850 8100 2950
+Wire Wire Line
+	8100 2950 8650 2950
+Wire Wire Line
+	6850 5900 8650 5900
+Wire Wire Line
+	8650 5900 8650 4150
+Connection ~ 6850 5900
+Wire Wire Line
+	6850 5650 8600 5650
+Wire Wire Line
+	8600 5650 8600 4050
+Wire Wire Line
+	8600 4050 8650 4050
+Wire Wire Line
+	6850 5400 8550 5400
+Wire Wire Line
+	8550 5400 8550 3950
+Wire Wire Line
+	8550 3950 8650 3950
+Wire Wire Line
+	6850 5150 8500 5150
+Wire Wire Line
+	8500 5150 8500 3850
+Wire Wire Line
+	8500 3850 8650 3850
+Wire Wire Line
+	6850 4900 8450 4900
+Wire Wire Line
+	8450 4900 8450 3750
+Wire Wire Line
+	8450 3750 8650 3750
+Wire Wire Line
+	6850 4650 8400 4650
+Wire Wire Line
+	8400 4650 8400 3650
+Wire Wire Line
+	8400 3650 8650 3650
+Wire Wire Line
+	6850 4400 8350 4400
+Wire Wire Line
+	8350 4400 8350 3550
+Wire Wire Line
+	8350 3550 8650 3550
+Wire Wire Line
+	6850 4150 8250 4150
+Wire Wire Line
+	8250 4150 8250 3450
+Wire Wire Line
+	8250 3450 8650 3450
+Wire Wire Line
+	6850 3900 8150 3900
+Wire Wire Line
+	8150 3900 8150 3350
+Wire Wire Line
+	8150 3350 8650 3350
+Wire Wire Line
+	6850 3650 8100 3650
+Wire Wire Line
+	8100 3650 8100 3250
+Wire Wire Line
+	8100 3250 8650 3250
+Wire Wire Line
+	6850 3350 8050 3350
+Wire Wire Line
+	8050 3350 8050 3150
+Wire Wire Line
+	8050 3150 8650 3150
+Wire Wire Line
+	6850 3100 8000 3100
+Wire Wire Line
+	8000 3100 8000 3050
+Wire Wire Line
+	8000 3050 8650 3050
 $EndSCHEMATC
