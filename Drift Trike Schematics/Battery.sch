@@ -1716,7 +1716,7 @@ Wire Wire Line
 	9750 3400 10300 3400
 Wire Wire Line
 	9700 2650 9700 5850
-Connection ~ 9700 5850
 Text GLabel 9700 5850 0    50   Input ~ 0
 B+
+NoConn ~ 10650 5850
 $EndSCHEMATC
