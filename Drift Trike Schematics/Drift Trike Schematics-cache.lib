@@ -23,7 +23,7 @@ F1 "trike_lib_BMS" 100 -50 50 H V C CNN
 F2 "" 100 -50 50 H I C CNN
 F3 "" 100 -50 50 H I C CNN
 DRAW
-S 0 0 950 -2250 0 1 0 N
+S 0 0 950 -2250 0 1 0 f
 X GND 1 -100 -150 100 R 50 50 1 1 I
 X B9 10 -100 -1050 100 R 50 50 1 1 I
 X B10 11 -100 -1150 100 R 50 50 1 1 I
@@ -48,6 +48,57 @@ X B8 9 -100 -950 100 R 50 50 1 1 I
 X B- ~ 300 100 100 D 50 50 1 1 I
 X C- ~ 350 -2350 100 U 50 50 1 1 O
 X P- ~ 650 -2350 100 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# trike_lib_battery_block
+#
+DEF trike_lib_battery_block U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H I C CNN
+F1 "trike_lib_battery_block" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 175 -50 50 0 0 0 Battery Normal 0 C C
+S 0 0 350 -600 0 1 0 f
+X B+ ~ 450 -200 100 L 50 50 1 1 O
+X B- ~ 450 -450 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# trike_lib_motor
+#
+DEF trike_lib_motor U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H I C CNN
+F1 "trike_lib_motor" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 112 0 0 0 N
+T 0 0 175 25 0 0 0 Motor Normal 0 C C
+S -200 200 200 -200 0 1 0 f
+S -50 50 50 -50 0 1 0 N
+X U ~ 300 150 100 L 50 50 1 1 I
+X V ~ 300 0 100 L 50 50 1 1 I
+X W ~ 300 -150 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# trike_lib_motor_controller
+#
+DEF trike_lib_motor_controller U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H I C CNN
+F1 "trike_lib_motor_controller" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 175 -50 25 0 0 0 "Motor Controller" Normal 0 C C
+S 0 0 350 -500 0 1 0 f
+X B+ ~ -100 -150 100 R 50 50 1 1 I
+X B- ~ -100 -250 100 R 50 50 1 1 I
+X U ~ 450 -150 100 L 50 50 1 1 I
+X V ~ 450 -250 100 L 50 50 1 1 I
+X W ~ 450 -350 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
