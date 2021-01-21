@@ -59,28 +59,26 @@ F1 "trike_lib_battery_block" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-T 0 175 -50 50 0 0 0 Battery Normal 0 C C
-S 0 0 350 -600 0 1 0 f
-X B+ ~ 450 -200 100 L 50 50 1 1 O
-X B- ~ 450 -450 100 L 50 50 1 1 O
+T 0 500 -100 50 0 0 0 Battery Normal 0 C C
+S 0 0 1000 -1500 0 1 0 f
+X B+ ~ -100 -400 100 R 50 50 1 1 O
+X B- ~ -100 -1000 100 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
 # trike_lib_motor
 #
 DEF trike_lib_motor U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H I C CNN
-F1 "trike_lib_motor" 0 0 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F0 "U" 450 -250 50 H I C CNN
+F1 "trike_lib_motor" 450 -250 50 H I C CNN
+F2 "" 450 -250 50 H I C CNN
+F3 "" 450 -250 50 H I C CNN
 DRAW
-C 0 0 112 0 0 0 N
-T 0 0 175 25 0 0 0 Motor Normal 0 C C
-S -200 200 200 -200 0 1 0 f
-S -50 50 50 -50 0 1 0 N
-X U ~ 300 150 100 L 50 50 1 1 I
-X V ~ 300 0 100 L 50 50 1 1 I
-X W ~ 300 -150 100 L 50 50 1 1 I
+T 0 475 -75 50 0 0 0 Motor Normal 0 C C
+S 0 0 1000 -1500 0 1 0 f
+X U ~ 1100 -550 100 L 50 50 1 1 I
+X V ~ 1100 -700 100 L 50 50 1 1 I
+X W ~ 1100 -850 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -92,13 +90,13 @@ F1 "trike_lib_motor_controller" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-T 0 175 -50 25 0 0 0 "Motor Controller" Normal 0 C C
-S 0 0 350 -500 0 1 0 f
-X B+ ~ -100 -150 100 R 50 50 1 1 I
-X B- ~ -100 -250 100 R 50 50 1 1 I
-X U ~ 450 -150 100 L 50 50 1 1 I
-X V ~ 450 -250 100 L 50 50 1 1 I
-X W ~ 450 -350 100 L 50 50 1 1 I
+T 0 525 -100 50 0 0 0 "Motor Controller" Normal 0 C C
+S 0 0 1000 -1500 0 1 0 f
+X B+ ~ -100 -400 100 R 50 50 1 1 I
+X B- ~ -100 -1000 100 R 50 50 1 1 I
+X U ~ -100 -550 100 R 50 50 1 1 I
+X V ~ -100 -700 100 R 50 50 1 1 I
+X W ~ -100 -850 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
