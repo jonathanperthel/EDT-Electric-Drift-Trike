@@ -62,16 +62,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 2950 7800 2950
 Wire Wire Line
-	6100 2950 6600 2950
-Wire Wire Line
-	6100 2800 6600 2800
-Wire Wire Line
-	6600 2800 6600 2950
-Connection ~ 6600 2950
-Wire Wire Line
 	6600 2950 6950 2950
-Wire Wire Line
-	6100 3500 8400 3500
 Wire Wire Line
 	3600 3550 4900 3550
 Wire Wire Line
@@ -94,7 +85,7 @@ L trike_lib:Throttle U
 U 1 1 60566AFA
 P 4150 2500
 F 0 "U" H 4333 2665 50  0001 C CNN
-F 1 "Throttle" H 4333 2573 50  0000 C CNN
+F 1 "Throttle" H 4333 2573 50  0001 C CNN
 F 2 "" H 4550 1950 50  0001 C CNN
 F 3 "" H 4550 1950 50  0001 C CNN
 	1    4150 2500
@@ -106,4 +97,23 @@ Wire Wire Line
 	4500 2950 4900 2950
 Wire Wire Line
 	4500 2800 4900 2800
+Wire Wire Line
+	3600 3700 4900 3700
+Wire Wire Line
+	6600 2650 6100 2650
+Wire Wire Line
+	6600 2650 6600 2800
+Wire Wire Line
+	6100 2800 6600 2800
+Connection ~ 6600 2800
+Wire Wire Line
+	6600 2800 6600 2950
+Wire Wire Line
+	6100 2950 6500 2950
+Wire Wire Line
+	6500 2950 6500 3100
+Wire Wire Line
+	6500 3100 8400 3100
+Wire Wire Line
+	8400 3100 8400 3500
 $EndSCHEMATC

@@ -92,14 +92,15 @@ ENDDEF
 # trike_lib_Throttle
 #
 DEF trike_lib_Throttle U 0 40 Y Y 1 F N
-F0 "U" 350 50 50 H V C CNN
-F1 "trike_lib_Throttle" 150 50 50 H V C CNN
+F0 "U" 350 50 50 H I C CNN
+F1 "trike_lib_Throttle" 150 50 50 H I C CNN
 F2 "" 400 -550 50 H I C CNN
 F3 "" 400 -550 50 H I C CNN
 DRAW
+T 0 125 -50 30 0 0 0 Throttle Normal 0 C C
 S 250 -550 0 0 0 1 0 f
-X +5V ~ 350 -450 100 L 50 50 1 1 I
-X GND ~ 350 -300 100 L 50 50 1 1 I
+X +5V ~ 350 -300 100 L 50 50 1 1 I
+X GND ~ 350 -450 100 L 50 50 1 1 I
 X Sig ~ 350 -150 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
@@ -129,6 +130,7 @@ F3 "" 450 -250 50 H I C CNN
 DRAW
 T 0 475 -1375 50 0 0 0 Motor Normal 0 C C
 S 0 0 1000 -1500 0 1 0 f
+X Hall_Sensor ~ 1100 -1200 100 L 50 50 1 1 I
 X U ~ 1100 -750 100 L 50 50 1 1 I
 X V ~ 1100 -900 100 L 50 50 1 1 I
 X W ~ 1100 -1050 100 L 50 50 1 1 I
@@ -143,11 +145,18 @@ F1 "trike_lib_motor_controller" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-T 0 575 -1400 50 0 0 0 "Motor Controller" Normal 0 C C
-S 0 0 1000 -1500 0 1 0 f
-X B+ ~ 1100 -450 100 L 50 50 1 1 I
-X B- ~ 1100 -1000 100 L 50 50 1 1 I
-X Key ~ 1100 -300 100 L 50 50 1 1 I
+T 0 475 -2450 50 0 0 0 "Motor Controller" Normal 0 C C
+S 0 0 1000 -2550 0 1 0 f
+X 3_Speed_Gear ~ -100 -2250 100 R 50 50 1 1 I
+X Anti_Theft ~ -100 -1500 100 R 50 50 1 1 I
+X B+ ~ 1100 -300 100 L 50 50 1 1 I
+X B- ~ 1100 -450 100 L 50 50 1 1 I
+X Boost ~ -100 -1800 100 R 50 50 1 1 I
+X E_Lock ~ 1100 -150 100 L 50 50 1 1 I
+X Hall_Sensor ~ -100 -1200 100 R 50 50 1 1 I
+X High_Brake ~ -100 -1950 100 R 50 50 1 1 I
+X Low_Brake ~ -100 -2100 100 R 50 50 1 1 I
+X Reverse ~ -100 -1650 100 R 50 50 1 1 I
 X Thr_+5V ~ -100 -300 100 R 50 50 1 1 I
 X Thr_GND ~ -100 -450 100 R 50 50 1 1 I
 X Thr_Sig ~ -100 -150 100 R 50 50 1 1 I
